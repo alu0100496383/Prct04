@@ -19,4 +19,105 @@
   Por ejemplo:  \[h^2=a^2 + b^2 \]
 \end{abstract}
 
+\section{Ambientes matemáticos para LaTeX}
+Como anteriormente se mencionó \LaTeX{}~\cite{Lam:86} es especialmente apropiado 
+para imprimir fórmulas, ecuaciones y símbolos matemáticos. 
+Para esto existe el ambiente matemático, el cual se puede utilizar 
+a través de 4 comandos que son: math (para fórmulas en el texto), 
+displaymath (para una línea de ecuación no numerada), equation 
+(para una línea de ecuación numerada) y por último eqnarray 
+(para varias líneas de ecuación). $\\par$.
+
+\subsection{Ambiente Math}
+Este ambiente se utiliza para intercalar fórmulas en las líneas de texto, 
+por ejemplo si se escribe: El teorema de Pitágoras, $x^{2} + y^{2} = h^{2}$ . 
+\subsection{Ambiente displaymath y equation}
+Este comando se utiliza para imprimir una ecuación en el centro de la línea. Los comandos son:
+Si encierras la fórmula entre los comandos begin{displaymath} y end{displaymath}, 
+ocasiona que la fórmula no sea numerada.
+En cambio si se utiliza begin{equation} y end{equation} la fórmula será numerada. Y cada 
+vez que ingreses una nueva fórmula en este ambiente se incrementará automáticamente el número.
+Se escribía asi:
+\begin{verbatim}
+\begin{displaymath}
+               x^{2} + y^{2} = h^{2}
+\end{displaymath}
+\end{verbatim}
+\begin{verbatim}
+\begin{equation}
+	      x^{2} + y^{2} = h^{2}
+\end{equation} 
+\end{verbatim}
+El resultado en \LaTeX{}~\cite{Lam:86} sería:
+\begin{displaymath}
+               x^{2} + y^{2} = h^{2}
+\end{displaymath}
+\begin{equation}
+	      x^{2} + y^{2} = h^{2}
+\end{equation} 
+
+\subsection{Ambiente eqnarray}
+Existe un cuarto modo que es el modo eqnarray. Este modo está pensado para escribir ecuaciones 
+multilineas o ecuaciones que exceden al ancho de linea; se comporta como una matriz de tres columnas 
+donde la primera alinea a derecha, la segunda al centro y la tercera a la izquierda.
+
+Las ecuaciones que queramos presentar en este modo deben encerrarse entre begin{eqnarray} y end{eqnarray}; si quisiéramos 
+las mismas sin numeración podemos utilizar eqnarray* en vez de eqnarray.
+Se escribiría así:
+\begin{verbatim}
+\begin{eqnarray*}
+ \frac1{t - z} & = & \frac1{t - a - (z - a)} \\
+ & = & \frac1{t - a}
+  \left( \frac1{1 - \frac{z - a}{t - a}} \right) \\
+ & = & \frac1{t - a}
+  \left[ \sum_{i=0}^n \left( \frac{z - a}{t - a} \right)^n
+  + \frac{\left( \frac{z - a}{t - a} \right)^{n+1}}
+  {1 + \frac{z - a}{t - a}} \right]
+\end{eqnarray*}
+\end{verbatim}
+El resultado en \LaTeX{}~\cite{Lam:86} sería:
+\begin{eqnarray*}
+ \frac1{t - z} & = & \frac1{t - a - (z - a)} \\
+ & = & \frac1{t - a}
+  \left( \frac1{1 - \frac{z - a}{t - a}} \right) \\
+ & = & \frac1{t - a}
+  \left[ \sum_{i=0}^n \left( \frac{z - a}{t - a} \right)^n
+  + \frac{\left( \frac{z - a}{t - a} \right)^{n+1}}
+  {1 + \frac{z - a}{t - a}} \right]
+\end{eqnarray*}
+
+\section{Referencia de ecuaciones}
+Es posible referenciar una ecuación desde cualquier lugar del texto, para ello se utilizan dos comandos, estos son
+\begin{verbatim}
+\label{key} (En al ecuación)
+
+~\ref{key} (Insertada en el lugar del texto donde la ecuación es citada)
+
+\end{verbatim}
+Cualquier texto puede ser usado para reemplazar a key. Suponga que tiene la siguiente ecuación con el primer comando
+\begin{verbatim}
+          \begin{equation}
+               Y = 4x^{2} - 3x + 5  \label{ecua}
+          \end{equation}
+\end{verbatim}
+En cualquier lugar del texto donde escriba \begin{verbatim} ~\ref{ecua} \end{verbatim} obtendrá la ecuación.
+Ejemplo:
+\begin{equation}
+               Y = 4x^{2} - 3x + 5  \label{ecua}
+          \end{equation}
+Yo quiero que la rerefencia a esa ecuación salga justamente aquí: ~\ref{ecua}
+
+Nota : Al igual que los otros comandos para referenciar páginas o secciones este comando requiere 
+que el documento sea compilado dos veces. 
+
+\bigskip
+\begin{tabular}{|l|c|c|c|}
+\hline
+Nombre & Día & Mes & Año \\ \hline
+Mérari & 21 & 07 & 1990 \\ \hline
+Nacho & 29 & 07 & 1990 \\ \hline
+\end{tabular}
+\includegraphics[width=0.5\textwidth]{imagen1.eps}
 \end{document}
+
+

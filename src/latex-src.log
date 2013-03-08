@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2013.1.15)  8 MAR 2013 12:42
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2013.1.15)  8 MAR 2013 13:46
 entering extended mode
  %&-line parsing enabled.
 **latex-src.tex
@@ -319,20 +319,39 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 LaTeX Warning: Citation `Lam:86' on page 1 undefined on input line 13.
 
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 23.
+
+LaTeX Warning: Citation `Lam:86' on page 1 undefined on input line 23.
+
 [1
 
-] (./latex-src.aux)
+]
+
+LaTeX Warning: Citation `Lam:86' on page 2 undefined on input line 51.
+
+
+LaTeX Warning: Citation `Lam:86' on page 2 undefined on input line 78.
+
+[2]
+Overfull \hbox (54.60022pt too wide) in paragraph at lines 96--96
+[]\OT1/cmtt/m/n/12 ~\ref{key} (Insertada en el lugar del texto donde la ecuaci^
+^Son es citada)[] 
+ []
+
+File: imagen1.eps Graphic file (type eps)
+<imagen1.eps> [3] (./latex-src.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 1364 strings out of 495062
- 15687 string characters out of 1182644
- 72429 words of memory out of 3000000
- 4573 multiletter control sequences out of 15000+50000
- 8197 words of font info for 29 fonts, out of 3000000 for 9000
+ 1381 strings out of 495062
+ 15892 string characters out of 1182644
+ 76429 words of memory out of 3000000
+ 4586 multiletter control sequences out of 15000+50000
+ 10201 words of font info for 36 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
  25i,11n,27p,213b,251s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on latex-src.dvi (1 page, 1416 bytes).
+Output written on latex-src.dvi (3 pages, 7720 bytes).

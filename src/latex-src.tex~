@@ -1,0 +1,24 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage[spanish]{babel}
+\begin{document}
+\title{Fórmulas matemáticas en LaTeX}
+\author{Mérari Afonso \\
+        Técnicas Experimentales~\footnote{Universidad de la Laguna}
+        }
+\date{\today}
+\maketitle
+\begin{abstract}
+  Una de las grandes ventajas de \LaTeX{}~\cite{Lam:86} es la 
+  existencia de una gran cantidad de "paquetes" estándares pensados 
+  para dotar a los textos de toda la funcionalidad que se precise. 
+  Así hay paquetes para incluir gráficos, textos de lenguajes de programación,
+  fórmulas físicas y químicas, diagramas matemáticos, etc.
+  
+  Por ejemplo: $x^2 \times y^{\alpha + \beta}$.
+  También se pueden escribir fórmulas centradas:
+  \[h^2=a^2 + b^2 \]
+\end{abstract}
+
+\end{document}
